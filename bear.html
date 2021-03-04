@@ -2,6 +2,23 @@
 <html>
  <head>
 <title>Welcome to my Bear Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  /* h1{ color:black;
+    background-color:coral;
+    display:inline-block;}  
+  #result3{color:sienna;
+        display: inline-block;
+        background-color: skyblue;}
+  #result4{color:sienna;
+        display: inline-block;
+        background-color: skyblue;} */
+
+</style>
  </head>
 <body>
 <h1>Keerthi Muli builds a bear</h1>
@@ -13,7 +30,7 @@
     <label for="scraf">scraf</label><br>
     <input type ="checkbox" id="form3_shirt" name="form3_shirt" value= "shirt">
     <label for="shirt">shirt</label><br>
-    <input type="button" onclick="startbear()" value= "Start a bear">
+    <input type="button" onclick="startbear()" class="btn btn-warning" id = "form3_button" value= "Start a bear">
 </form>
 <p id="result3">The result for Start Bear will be displayed here </p>
 <form>
@@ -25,7 +42,7 @@
     <input type ="text" id="value" name="value">
     </br>
 
-    <input type="button" onclick="updatebear()" value="Update the bear">
+    <input type="button" onclick="updatebear()" class="btn btn-warning" sid ="form3_button1" value="Update the bear">
 
 </form>
 </br>

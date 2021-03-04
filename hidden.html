@@ -2,6 +2,20 @@
 <html>
  <head>
      <title> Welcome to my Hidden Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    h1{ color:black;
+        background-color:slategray;
+        display:inline-block;}  
+    #GP{color:sienna;
+        display: inline-block;
+        background-color: skyblue;}
+</style>
+</head>
  </head>
 <body>
 <h1>Hidden things by Keerthi Muli</h1>
@@ -12,11 +26,11 @@
     <input type ="password" id="form1_password" name="form1_password" value= "Secret" min=10 max=50 step=2 value=30> <br>
     <label for="form1_Guess">Enter a guess</label>
     <input type ="text" id="form1_Guess" name="form1_Guess" autofocus> <br>
-    <input type="button" onclick="processGuess()" value= "Check the guess">
+    &nbsp;<input type="button" onclick="processGuess()" class="btn btn-success" id ="form1_button" value= "Check the guess">
 </form>
 <p id="GP">Guess the Password </p>
 <div class="container">
-        <img src="Images/Ice Plant.jpg" onClick="rotateImage()" id="image" alt="Eleagnus" width="200" height="200">
+    <img src="Images/Ice Plant.jpg" onClick="rotateImage()" id="image" alt="Eleagnus" width="200" height="200">
         
 </div>
 <script> 
